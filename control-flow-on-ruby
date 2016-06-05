@@ -1,3 +1,5 @@
+# If, elsif and else
+
 print "Introduce any word:"
 x = gets.chomp
 print "Now introduce other word to compare its size with the previous word:"
@@ -9,3 +11,26 @@ elsif x.length > y.length
 else x.length == y.length
     print "The both words have the same number of letters"
 end
+
+
+# Unless
+
+print "Enter a number:"
+x = Integer(gets.chomp)
+
+unless x >= 0
+    print "Your number is negative"
+else x < 0
+    print "Your number is positive"
+end
+
+# Booleans
+
+# test_1 should be true
+test_1 = ( 100 > 10 ) && !( false )
+
+# test_2 = should be true
+test_2 = (0 == 0) || ( 10 < 9 )
+
+# test_3 = should be false
+test_3 = !(2 == 2)
