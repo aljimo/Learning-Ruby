@@ -1,6 +1,6 @@
 print "Introduce any word:"
 x = gets.chomp
-print "Now introdune othe word to compare its size with the previous word:"
+print "Now introduce other word to compare its size with the previous word:"
 y = gets.chomp
 if x.length < y.length
     print "The word #{x} is shorter than #{y} "
