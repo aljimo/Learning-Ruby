@@ -1,0 +1,11 @@
+print "Introduce any word:"
+x = gets.chomp
+print "Now introdune othe word to compare its size with the previous word:"
+y = gets.chomp
+if x.length < y.length
+    print "The word #{x} is shorter than #{y} "
+elsif x.length > y.length
+    print "The word #{x} is larger than #{y}"
+else x.length == y.length
+    print "The both words have the same number of letters"
+end
