@@ -1,0 +1,16 @@
+print "Write something:"
+user_input = gets.chomp
+user_input.downcase!
+
+if user_input.include? ""
+    print "Write something please:"
+    user_input = gets.chomp
+    user_input.downcase!
+end
+
+if user_input.include? "s"
+    user_input.gsub!(/s/, "th")
+    puts "Here is your duckified string: #{user_input}"
+else 
+    print "There's no 's' on your string"
+end
